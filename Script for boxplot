@@ -43,4 +43,16 @@ tre %>%
   ggtitle("bio1") +
   xlab("")
 
+# Type 3
+tre %>%
+  ggplot( aes(x=bio1, y=SPECIES, fill=SPECIES)) +
+  geom_violin() +
+  scale_fill_viridis(discrete = TRUE, alpha=0.6, option="A") +
+  theme_ipsum() +
+  theme(
+    legend.position="none",
+    plot.title = element_text(size=11)
+  ) +
+  ggtitle("bio1") +
+  xlab("")
 
